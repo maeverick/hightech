@@ -4,7 +4,7 @@
   "description": "\"a school projrct\"",
   "main": "hightech.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "change": "browserify hightech.js > bundle.js "
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/maeverick/hightech/issues"
   },
-  "homepage": "https://github.com/maeverick/hightech#readme"
+  "homepage": "https://github.com/maeverick/hightech#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
