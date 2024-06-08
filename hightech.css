@@ -1,0 +1,338 @@
+ *{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+     --color2 : rgba(56, 51, 51, 0.7) ;
+    --color1 : rgb(255, 247, 247) ;
+}
+/* .nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+   
+}
+.logo{
+    width: 40px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+padding-left: 30px;
+}
+.menu li a{
+    display: inline-block;
+    color: var(--color1);
+    text-decoration: none;
+    text-transform: uppercase;
+text-align: center;
+position: relative;
+transition: 0.15s ease-in-out;
+
+}
+.menu li a::after{
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+
+}
+.menu li a:hover::after{
+    width: 100%;
+}
+.open-menu, .close-menu{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.open-menu{
+   top: 50%;
+   right: 20px;
+   transform: translateY(-50%);
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+#check{
+   display: none;
+}
+@media(max-width: 830px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease;
+    }
+    .menu li{margin-top: 30px;}
+    .menu li a{padding: 10px;}
+    .open-menu, .close-menu{display: block; }
+    #check:checked ~ .menu{right:0 ;}
+} */
+header{
+    background-color: rgba(56, 51, 51, 0.7);
+    display: flex;
+    padding: 37px 33px;
+    justify-content: space-between;
+    align-items: center;
+}
+.register{
+    border-radius: 18px;
+}
+.nav{
+display: flex;
+list-style: none;
+font-size: 1.02em;
+}
+nav li{
+    padding: 20px;
+}
+a{
+  text-transform: uppercase;
+margin-right: 30px;
+color: rgb(218, 218, 218);  
+text-decoration: none;
+}
+header ul{
+display: flex;
+list-style: none;
+}
+
+.logo{
+    margin: 0 30px 0 0;
+}
+.logo img{
+   max-width: 100%;
+   vertical-align: middle;
+   height: auto;
+}
+#one{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/banner.jpg);
+    background-position:unset;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#intro{
+    margin-top:1%;
+    margin-left: 15%;
+height: 100%;
+width:500px;
+}
+#intro h1{
+    font-size: 6em;
+    font-weight: 700;
+    margin: 30px 0; 
+    line-height: 1.2em;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#intro p{
+    font-size: small;
+    margin-bottom: 60px;
+    color: #fff;
+}
+.intro_link{
+   
+    text-decoration: none;
+    color: black;
+background-color: #fff;
+    padding: 20px 40px;
+    margin-right: 10px;
+  
+    transition: color ease-in 800ms, background-color ease-in 800ms;
+}
+.intro_link:hover{
+ color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+}
+#do{
+    padding: 90px 0 190px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#do h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.under,.two{
+    height: 100%;
+    width: 100%; 
+    position: relative;
+    margin: 0px;
+}
+.under::after{
+    content: "";
+    background-color: #161616;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+width: 100%;
+    height: 10px;
+    margin-top: 20px;
+}
+.two::after{
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+width: 100%;
+    height: 10px;
+    margin-top: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 4),1fr));
+    gap: 20px;
+}
+.act{
+    border: 0.5px  rgb(167, 167, 167) solid;
+    
+    margin: 10px;
+    padding: 50px;
+    height: auto;
+    transition: 800ms;
+}
+.act img{
+    height: 100px ;
+    width: 100px;
+    padding: 15px;
+}
+.act h3{
+    color: rgb(110, 109, 109);
+  font-size: 1.5em;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+.act p{
+    color: rgb(110, 109, 109);
+
+    padding-top: 20px;
+    font-weight: 450;
+}
+.act .more{
+  float: right;
+  padding: 10px 30px;
+  background-color: rgb(110, 109, 109);
+  margin-top: 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  transition: 800ms;
+}
+
+.act:hover{
+    border: 1px rgb(0, 0, 0) solid;
+}
+#about{
+    height: 100vh;
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+    background: url(images/about_bg.jpg) center no-repeat ;
+   
+}
+#about h2{
+    font-size: 3rem;
+ margin: 30px;
+}
+#about p{
+    font-weight: 400;
+}
+
+#Portfolio{
+    background-color: aqua;
+    padding: 10% 15%;
+}
+#Portfolio h2{
+font-weight: 700;
+font-size: 3rem;
+margin-bottom: 20px;
+}
+.portfolio_items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+   flex: 0 0 50%;
+}
+
+.item{
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    position: relative;
+ padding: 0 15px;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+}
+.glide{
+    background-color: #fff;
+    padding: 40px;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 0;
+    overflow: initial;
+    height: 240px;
+}
+.glide h3{
+    font-size: 1.4rem;
+    font-weight: 900;
+} 
+.open-menu, .close-menu{
+  position: absolute;
+  cursor: pointer;
+  top:40px;
+    right: 20px;
+    display: none;
+}
+#check{
+ display: none;
+}
+
+@media  only screen and (max-width:1060px) {
+      .nav{
+            display:flex;
+            justify-content: center;
+          align-items: center;
+            flex-direction: column;
+            text-align: center;
+            position: fixed;
+            top:-100%;
+            right: 0;
+            width: 100%;
+            height: 50vh;
+          background-color: black;
+          z-index: 100;
+          transition: all 0.5s ease;
+        }
+        .nav li{ margin-top: 20px;}
+        .nav a{padding: 10px;}
+        .open-menu, .close-menu{
+            display: block;
+        }
+        #check:checked ~ .nav{top: 0;}
+    }
