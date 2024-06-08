@@ -1,0 +1,24 @@
+{
+  "name": "hightech",
+  "version": "1.0.0",
+  "description": "\"a school projrct\"",
+  "main": "hightech.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maeverick/hightech.git"
+  },
+  "keywords": [
+    "tech",
+    "innovators",
+    "employee"
+  ],
+  "author": "Roderick Oziwele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maeverick/hightech/issues"
+  },
+  "homepage": "https://github.com/maeverick/hightech#readme"
+}
