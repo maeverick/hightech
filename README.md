@@ -1,2 +1,0 @@
-# hightech
-a tech company
